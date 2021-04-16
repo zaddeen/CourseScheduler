@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import {firebase} from '../firebase';
+import {firebase} from '../utils/firebase';
 import React, { useContext, useState, useEffect } from 'react';
 import { StyleSheet, Text, SafeAreaView,} from 'react-native';
 import CourseList from '../components/CourseList';
