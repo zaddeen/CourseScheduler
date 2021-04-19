@@ -67,6 +67,7 @@ const RegisterScreen = ({navigation}) => {
             autoCapitalize="none"
             keyboardType="email-address"
             textContentType="emailAddress"
+            style={styles.fieldSpecific}
           />
           <Form.Field
             name="password"
@@ -76,6 +77,7 @@ const RegisterScreen = ({navigation}) => {
             autoCorrect={false}
             secureTextEntry={true}
             textContentType="password"
+            style={styles.fieldSpecific}
           />
           <Form.Field
             name="confirm"
@@ -85,6 +87,7 @@ const RegisterScreen = ({navigation}) => {
             autoCorrect={false}
             secureTextEntry={true}
             textContentType="password"
+            style={styles.fieldSpecific}
           />
           <Form.Button title={values => values.confirm ? 'Register' : 'Login'} />
           {<Form.ErrorMessage error={signInError} visible={true} />}
@@ -120,6 +123,10 @@ const styles = StyleSheet.create({
   },
   label: {
     fontWeight: 'bold',
+  },
+  fieldSpecific: {
+    width: 300,
+    fontSize: 16,
   }
 });
 

@@ -48,17 +48,20 @@ const CourseEditScreen = ({route}) => {
             placeholder="F110"
             autoCapitalize="none"
             autoFocus={true}
+            style={styles.fieldSpecific}
           />
           <Form.Field
             name="meets"
             leftIcon="calendar-range"
             placeholder="MThu 12:00-13:50"
             autoCapitalize="none"
+            style={styles.fieldSpecific}
           />
           <Form.Field
             name="title"
             leftIcon="format-title"
             placeholder="Introduction to programming"
+            style={styles.fieldSpecific}
           />
           <Form.Button title={'Update'} />
           {<Form.ErrorMessage error={submitError} visible={true} />}
@@ -94,6 +97,10 @@ const styles = StyleSheet.create({
   },
   label: {
     fontWeight: 'bold',
+  },
+  fieldSpecific: {
+    width: 300,
+    fontSize: 16,
   }
 });
 
